@@ -1,0 +1,104 @@
+#about{
+    padding:80px;
+    color: #0c0c0c;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+.aboutcol1{
+    flex-basis: 35%;
+
+}
+.aboutcol1 img{
+    width: 70%;
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-left: 30px;
+
+}
+.aboutcol2{
+    flex-basis: 60%;
+}
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+
+    color: rgb(8, 8, 8);
+    
+}
+.text{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 20px;
+}
+.tabtitles{
+    display: flex;
+    margin: 20px 0 40px;
+    font-weight: bold;
+}
+.tablinks{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+   
+}
+.tablinks::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#d92cf9;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+}
+.tablinks.activelink::after{
+width: 90%;
+margin-block: auto;
+}
+.tabcontents{
+    height: auto;
+    margin-top: -15px;
+}
+.tabcontents ul li{
+    list-style:disc;
+
+    margin:  10px 0;
+   
+
+}
+.tabcontents ul li::marker{
+    color:#d92cf9;
+}
+.tabcontents ul li span{
+    color: #d92cf9;
+    font-size: 14px;
+    font-weight: bold;
+}
+.tabcontents{
+    display: none;
+}
+.tabcontents.activetab{
+    display:block;
+}
+a .button3{
+
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 30px;
+    margin-top: 100px;
+      border: 1px solid black;
+        border-radius: 8px;
+cursor: pointer;
+float: right;
+    
+}
+
+
+
+
+
